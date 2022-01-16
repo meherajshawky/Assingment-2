@@ -1,0 +1,156 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* Add Font */
+body
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container{
+    background-color:#ffff;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+.part1 {
+    display: flex;
+}
+.section1{
+    width: 582px;
+    margin-right:100px;
+}
+
+article>h1{
+    font-size: 52px;
+}
+button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 50px;
+    color: white;
+}
+.camera img{
+    width: 440px;
+    height: 414px;
+    background-image: url(./images/Circle\ design.svg);
+}
+/* Section1 */
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.item{
+    width: 300px;
+    height: 476px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 6px 4px 20px #AAAAAA;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.thumbnial img{
+    width: 300px;
+    height: 256px;
+}
+.item-detials>h3{
+    font-size: 28px;
+   margin-top: -1px;
+}
+.item-detials>p{
+    font-size: 24px;
+    margin-top:-20px ;
+}
+.item-info{
+    font-size:14px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+.button2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 1000px;
+    margin-top: 10px;
+}
+.button2 a{
+    color: #E02C6D;
+    text-decoration: none;
+}
+/* 3rd section */
+.gear img{
+    width: 404px;
+    height: 230px;
+}
+.section2 h1{
+    font-size: 30px;
+}
+.part2{
+    display: flex;   
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.section2{
+    margin-left:40px;
+    width: 670px;
+    margin-top: -40px;
+}
+.button3{
+    display: flex;
+    flex-direction: column;
+
+}
+.button3 a{
+    color: white;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px;
+    width: 100px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #0A0826;
+    color: white;
+}
+.footer-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    font-size: 20px;
+}
+
+/* Mobile Device */
+@media only screen and (max-width: 588px) {
+    .container{
+        width: 90%;
+    }
+    .part1,.items,.part2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .part1, .items,.part2{
+        flex-direction: column;
+    }
+}
